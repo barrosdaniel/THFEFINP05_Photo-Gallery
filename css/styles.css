@@ -48,5 +48,35 @@ ul {
 
 
 /* ============================================================
+UTILITIES
+============================================================ */
+.container {
+  max-width: 120rem;
+}
+
+
+
+/* ============================================================
 COMPONENTS
 ============================================================ */
+.header {
+  margin: 0 auto;
+}
+
+.header__title {
+  margin: 3rem;
+  font-family: var(--font-title);
+  font-weight: 100;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.header__search {
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
