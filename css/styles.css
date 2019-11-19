@@ -126,6 +126,7 @@ RESPONSIVE DESIGN
 
   .header__search {
     width: 70%;
+    margin-bottom: 1rem;
   }
 
   .gallery {
@@ -140,6 +141,7 @@ RESPONSIVE DESIGN
 
   .header__search {
     width: 55%;
+    margin-bottom: 2rem;
   }
 
   .gallery {
