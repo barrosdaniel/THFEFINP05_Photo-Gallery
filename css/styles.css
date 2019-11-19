@@ -4,6 +4,7 @@ VARIABLES
 :root {
   /* Colours */
   --color-white: #f9f9f9;
+  --color-gray-light: #dedede;
 
   /* Font stack */
   --font-title: 'Permanent Marker', cursive;
@@ -21,6 +22,7 @@ RESETS
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  outline: none;
 }
 
 html {
@@ -52,6 +54,7 @@ UTILITIES
 ============================================================ */
 .container {
   max-width: 120rem;
+  margin: 0 auto;
 }
 
 
@@ -59,24 +62,87 @@ UTILITIES
 /* ============================================================
 COMPONENTS
 ============================================================ */
-.header {
-  margin: 0 auto;
-}
-
+/* Header */
 .header__title {
-  margin: 3rem;
+  margin: 1rem;
   font-family: var(--font-title);
   font-weight: 100;
-  font-size: 6rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .header__search {
   display: block;
-  width: 55%;
+  width: 90%;
   margin: 0 auto;
   padding: 1rem;
   font-family: inherit;
   font-size: 1.6rem;
   border-radius: 5px;
+}
+
+.header__search:focus {
+  background-color: var(--color-gray-light);
+}
+
+
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(1, 200px);
+  justify-items: center;
+  justify-content: center;
+
+  padding: 4rem;
+}
+
+
+
+/* ============================================================
+RESPONSIVE DESIGN
+============================================================ */
+@media (min-width: 600px) {
+  .header__title {
+    margin: 2rem;
+    font-size: 5rem;
+  }
+
+  .header__search {
+    width: 80%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 800px) {
+  .header__title {
+    margin: 3rem;
+    font-size: 6rem;
+  }
+
+  .header__search {
+    width: 70%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .header__title {
+    margin: 4rem;
+  }
+
+  .header__search {
+    width: 55%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 200px);
+  }
 }
