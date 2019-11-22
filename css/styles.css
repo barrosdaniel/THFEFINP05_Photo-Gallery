@@ -21,6 +21,7 @@ RESETS
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   outline: none;
 }
@@ -31,8 +32,10 @@ html {
 
 body {
   min-height: 100vh;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: rgb(2, 0, 36);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(2, 0, 36)), to(rgb(9, 9, 121)));
   background: linear-gradient(rgb(2, 0, 36), rgb(9, 9, 121));
   color: var(--color-white);
   font-family: var(--font-primary);
@@ -93,6 +96,8 @@ COMPONENTS
   grid-gap: 3rem;
   grid-template-columns: repeat(1, 200px);
   justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   padding: 4rem;
