@@ -4,7 +4,7 @@ Lightbox jQuery Plugin Options
 lightbox.option({
   'showImageNumberLabel': false,
   'wrapAround': true
-})
+});
 
 /* ============================================================ 
 Image Caption Filter
@@ -31,5 +31,5 @@ function filterImages(e) {
     } else {
       imageLink.style.display = 'none';
     }
-  })
+  });
 }
